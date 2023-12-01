@@ -1,20 +1,46 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+
+*{
     padding: 0;
-    background-color: #f4f4f4;
-  }
-
-  section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .cards {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    background-color: lightcoral;
+    padding-inline: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar_item{
+    display: inline-block;
+    margin-right: auto;
+}
+.logo{
+    margin-right: auto;
+}
+.navbar_item_link{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: brown;
+    color: aliceblue;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* team section  */
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
+    padding: 40px;
   }
 
   .card {
@@ -32,8 +58,8 @@ body {
     transform: scale(1.05);
   }
   .card img {
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 350px;
     border-bottom: 1px solid #ddd;
   }
 
@@ -85,7 +111,22 @@ body {
     margin: 5px;
     border-radius: 5px;
   }
-
+#pagination{
+  background-color: #3498db;
+  padding-block: 10px;
+  text-align: center;
+}
+#pagination button{
+  padding: 5px;
+  background-color: aliceblue;
+  color: #555;
+  font-weight: 900;
+  cursor: pointer;
+  margin-inline: 10px;
+}
+#pagination button:disabled{
+  color: #5555556f;
+}
   @media (max-width: 768px) {
     .card {
       width: calc(50% - 20px);
