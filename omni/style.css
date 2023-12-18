@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+.box{
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ff00;
+    height: 400px;
+    width: 400px;
+}
+h1:hover{
+    text-decoration: underline wavy pink 4px;
+}
