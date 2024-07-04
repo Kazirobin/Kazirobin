@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="shortcut icon"
+    href="./img/icon/favicon.ico"
+    type="image/x-icon"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' integrity='sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==' crossorigin='anonymous'/>
+  <title>Kazi Robin</title>
 </head>
 <body>
-    
+  <div class="container shape1">
+    <input type="checkbox" id="nav-toggle" />
+    <div class="navbar">
+      <div class="nav_top">
+        <div class="logo">
+          <a href="!#">
+            <img src="./img/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="bars">
+          <div class="bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="!#"><i>Home</i></a>
+        <a href="!#"><i>Services</i></a>
+        <a href="!#"><i>Portfolio</i></a>
+        <a href="!#"><i>Blog</i></a>
+        <a href="!#"><i>Contact</i></a>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="left">
+        <h1>HELLO I AM</h1>
+        <h2>Kazi Robin</h2>
+        <p>Graphic Designer, HTML Coder, PHP Programmer and Project Manager</p>
+        <a href="!#">
+          <button class="btn1">Start Consulting</button>
+        </a>
+      </div>
+      <div class="right">
+        <img class="img1" src="./img/kr1.png" alt="Kazi Robin" />
+      </div>
+    </div>
+  </div>
+  <div class="container" style="background: linear-gradient(var(--color1),var(--color2),var(--color3),var(--color4));">
+    <div class="services">
+      <div class="head">
+        <h2>My Superpower Is<br>Creating Interactive Website</h2>
+      </div>
+      <div class="detail">
+        <p>I love to do designs for every category of websites whether it be an online eCommerce store, an event page or even a product landing page.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-chart-pie"></i>
+          <h2>UX Research</h2>
+          <p>To give your project a kickstart, I'll provide you detailed UX research.</p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-slideshare"></i>
+          <h2>UI Design</h2>
+          <p>To visualize how your website will appear, I’ll design interactive UI.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-copy"></i>
+          <h2>Markup Design</h2>
+          <p>I'm also proficient in creating markup for your web projects.</p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-firstdraft"></i>
+          <h2>Prototyping Design</h2>
+          <p>Help your developer create pixel-perfect site, I provide designs prototype.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="background-color: var(--text2);">
+    <div class="contact">
+      <div class="title">
+        <h1>CONTACT ME</h1>
+        <div class="links">
+          <a target="_blank" href="https://www.facebook.com/kazirobinKing">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a target="_blank" href="https://wa.me/+8801787881334">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a target="_blank" href="https://x.com/KaziRobinKing1">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://github.com/Kazirobin">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/kazi-robin-a45620240/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="from">
+        <input type="text" placeholder="Full Name:" />
+        <input type="email" placeholder="Enter your email" />
+        <input type="text" placeholder="Write your message" />
+        <button type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const navbar = document.querySelector('.navbar');
+    const bars = document.querySelector('.bars');
+    bars.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
