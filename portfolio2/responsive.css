@@ -1,0 +1,40 @@
+@media (min-width:800px){
+    .menu{
+        display: flex;
+    }
+    .bars{
+        display: none;
+        visibility: hidden;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media (max-width:800px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu,#menu{
+        display: none;
+    }
+    #menu:checked~.menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+ 
+    .bars{
+        display: flex;
+    }
+}
