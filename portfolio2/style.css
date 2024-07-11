@@ -188,8 +188,16 @@ button h2{
 }
 .banner{
     background-image: url("./img/hero-banner.jpg");
-    height: 800px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media (max-width:768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
 .banner .left{
     width: 50vw;
@@ -201,6 +209,9 @@ button h2{
     justify-content: center;
     align-items: flex-start;
     padding: 70px;
+    @media (max-width:768px) {
+        width: 100vw;
+    }
 }
 .banner .left h1,
 .banner .left p,

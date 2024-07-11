@@ -14,6 +14,7 @@
     .navbar{
         flex-direction: column;
         align-items: flex-start;
+        display: contents;
     }
     .menu,#menu{
         display: none;
@@ -25,6 +26,7 @@
         row-gap: 15px;
         justify-content: center;
         align-items: center;
+        background-color: black;
     }
 
     .logos{
@@ -32,6 +34,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        background-color: black;
     }
  
     .bars{
