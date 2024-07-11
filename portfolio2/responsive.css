@@ -40,4 +40,8 @@
     .about__main{
         flex-direction: column;
     }
+    .about__title h1{
+        max-width: 80%;
+        font-size: 25px !important;
+    }
 }

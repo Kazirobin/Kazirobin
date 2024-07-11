@@ -274,6 +274,7 @@ button h2 {
     width: 800px;
     margin:auto;
     padding-block: 20px;
+    
 }
 .about__main{
     display: flex;
@@ -292,17 +293,16 @@ button h2 {
         margin: 20px;
         
     }
-    position: relative;
 }
 
 .rectangle{
     height: 30px;
     width: 30px;
     background-color: var(--hover-deep-color);
-    position: absolute;
-    left: 50%;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
-    top: 0;
+    margin-inline: auto;
+    margin-top: -40px;
+    margin-bottom: 10px;
 }
 
 .about__main .right{
