@@ -37,4 +37,7 @@
     .bars{
         display: flex;
     }
+    .about__main{
+        flex-direction: column;
+    }
 }
