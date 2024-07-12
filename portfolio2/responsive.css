@@ -56,4 +56,23 @@
         max-width: 80%;
         font-size: 25px !important;
     }
+    .talk h1{
+        font-size: 20px;
+    }
+    .talk__icons{
+        flex-direction: column;
+    }
+    .talk__icons .icon{
+        display: block;
+        width: 80%;
+        
+    }
+    .service__cards .service__card{
+        width: 80vw;
+    }
+}
+@media (max-width:600px){
+    .service__cards .service__card{
+        width: 100vw;
+    }
 }
