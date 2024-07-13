@@ -67,12 +67,53 @@
         width: 80%;
         
     }
+
+
     .service__cards .service__card{
         width: 80vw;
     }
+    .container.banner-2{
+        padding: 80px 40px;
+      }
+      .container .section-3 {
+        display: block;
+        width:100%;
+
+    }
+    .section-3 .left-3 {
+        width: 100%;
+        float: left;
+      }
+      .section-3 .left-3 h1 {
+        font-size: 30px;
+        padding: 120px 0px 30px 30px;
+      }
+      .section-3 .left-3 p {
+        padding: 20px 60px 30px 30px;
+        font-size: 20px;
+      }
+      
+      .section-3 .right-3  {
+        margin: auto;
+        text-align: center;
+      }
+      .section-3 .right-3 img {
+        width: 300px;
+        margin: auto;
+      }
+      .contact{
+        flex-direction: column;
+        gap: 20px;
+      }
+      .contact .from {
+        width: 100%;
+   }
+
 }
 @media (max-width:600px){
     .service__cards .service__card{
         width: 100vw;
     }
+
+
 }
