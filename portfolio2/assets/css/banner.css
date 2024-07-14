@@ -1,8 +1,84 @@
-@media (min-width: 800px) {
+.banner {
+    background-image: url("../img/hero-banner.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .banner .left {
+    width: 50vw;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px;
+    @media (max-width: 768px) {
+      width: 100vw;
+      padding: 10px;
+    }
+  }
+  
+  .banner .left h1 {
+    font-size: 46px;
+    @media (max-width: 800px) {
+      font-size: 26px;
+    }
+  }
+  .im.active {
+    z-index: -1;
+  }
+  .banner .left h1 span.im {
+    color: var(--hover-deep-color);
+  }
+  
+  .banner .left p {
+    font-size: 18px;
+    margin-block: 20px;
+    max-width: 450px;
+  }
+  .banner .left button {
+    font-size: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border: 3px solid var(--hover-deep-color);
+    cursor: pointer;
+  }
+  .banner .left button i {
+    color: var(--deep-light-color);
+  }
+  .banner .right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50vw;
+  }
+  .banner .right img {
+    width: 50vw;
+  }
 
+@media (min-width: 800px) {
+    .banner .right {
+        padding-block-start: 90px;
+      }
 }
 @media (max-width: 800px) {
-
+    .banner .left {
+        margin-top: 80px;
+        width: 100vw;
+        padding: 20px !important;
+      }
+      .banner .left button {
+        padding: 10px !important;
+        font-size: 16px !important;
+      }
 }
 @media (max-width: 600px) {
     

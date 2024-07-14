@@ -1,8 +1,116 @@
+.about__main .right {
+    background-color: var(--dark-bg-color);
+  }
+  .about__title h1 {
+    font-size: 36px;
+    display: block;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    padding-block: 20px;
+  }
+  .about__main {
+    display: flex;
+  }
+  .about__main .left,
+  .about__main .right {
+    flex: 1;
+    background-color: var(--dark-bg-color);
+  }
+  .about__main .left h1 {
+    font-size: 20px;
+    padding: 40px 20px;
+    border: 3px solid var(--hover-deep-color);
+    margin: 40px;
+    @media (max-width: 800px) {
+      margin: 20px;
+    }
+  }
+  
+  .rectangle {
+    height: 30px;
+    width: 30px;
+    background-color: var(--hover-deep-color);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    margin-inline: auto;
+    margin-top: -40px;
+    margin-bottom: 10px;
+  }
+  
+  .about__main .right {
+    background-color: var(--dark-bg-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 40px;
+  }
+  label img {
+    height: 30px;
+    width: 30px;
+  }
+  .progress {
+    background-color: var(--light-color);
+    border-radius: 30px;
+  }
+  .bar {
+    border-radius: 30px;
+  
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    color: var(--light-color);
+  }
+  .talk {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark-bg-color);
+  }
+  .talk h1 {
+    font-size: 36px;
+  }
+  .talk__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 20px;
+  }
+  .talk__icons .icon {
+    border: 1px solid var(--hover-deep-color);
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .talk__icons .icon:hover {
+    background-color: var(--hover-deep-color);
+    box-shadow: 0px 0px 20px var(--hover-deep-color);
+  }
 @media (min-width: 800px) {
 
 }
 @media (max-width: 800px) {
-
+    .about__main {
+        flex-direction: column;
+      }
+      .about__title h1 {
+        max-width: 80%;
+        font-size: 25px !important;
+      }
+      .talk h1 {
+        font-size: 20px;
+      }
+      .talk__icons {
+        flex-direction: column;
+      }
+      .talk__icons .icon {
+        display: block;
+        width: 80%;
+      }
 }
 @media (max-width: 600px) {
     
