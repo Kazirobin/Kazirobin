@@ -1,17 +1,5 @@
 @media (min-width: 800px) {
-  .logos .logo {
-    padding-top: 40px;
-  }
-  .menu {
-    display: flex;
-  }
-  .bars {
-    display: none;
-    visibility: hidden;
-  }
-  #menu {
-    display: none;
-  }
+
   .banner .right {
     padding-block-start: 90px;
   }
@@ -48,35 +36,7 @@
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-inline: 10px !important;
-  }
-  .menu,
-  #menu {
-    display: none;
-  }
-  #menu:checked ~ .menu {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    row-gap: 25px;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .logos {
-    display: flex;
-    align-items: center;
-    width: 90vw;
-  }
-
-  .bars {
-    display: flex;
-    margin-left: auto;
-    margin-right: 20px;
-  }
   .banner .left {
     margin-top: 80px;
     width: 100vw;
