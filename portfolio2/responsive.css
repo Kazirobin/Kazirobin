@@ -1,4 +1,7 @@
 @media (min-width:800px){
+    .logos .logo {
+        padding-top: 40px;
+       }
     .menu{
         display: flex;
     }
@@ -9,6 +12,30 @@
     #menu{
         display: none;
     }
+    .contact{
+        display: flex;
+    }
+    .contact .from {
+        width: 600px;
+      }
+      .contact .from input:nth-child(2) {
+        width: 40%;
+      }
+      .contact .from input:nth-child(3) {
+        width: 40%;
+        float: inline-end;
+      }
+      .contact .from input:first-child {
+        height: 200px;
+        width: 100%;
+      }
+      
+      .contact .from input:nth-child(4) {
+        width: 100%;
+        display: block;
+        margin-bottom: 0px;
+      
+      }
 }
 @media (max-width:800px) {
     .navbar{
@@ -104,9 +131,13 @@
       .contact{
         flex-direction: column;
         gap: 20px;
-      }
-      .contact .from {
-        width: 100%;
+    }
+    .contact .from {
+        width: 90%;
+        padding-inline-start: 20px;
+   }
+   .from input{
+    width: 100%;
    }
 
 }
@@ -115,5 +146,12 @@
         width: 100vw;
     }
 
-
+    .contact{
+        flex-direction: column;
+        gap: 10px;
+      }
+      .from input{
+        display: block;
+        width: 100%;
+      }
 }
