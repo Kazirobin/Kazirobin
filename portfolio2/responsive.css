@@ -12,6 +12,9 @@
     #menu{
         display: none;
     }
+    .banner .right {
+      padding-block-start: 90px;
+    }
     .contact{
         display: flex;
     }
