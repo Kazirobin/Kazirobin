@@ -484,18 +484,57 @@ label img {
 }
 .contact .from button {
   margin-top: 30px;
+  background: #000;
   border: 1px solid var(--hover-deep-color);
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  z-index: 2;
 }
-.contact .from button,
-.contact .from button i {
-  background-color: var(--dark-bg-color);
-  padding: 10px 20px;
+.hover__ltr{
+  position: relative;
+}
+.hover__ltr::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  z-index: -5;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: -1;
+  background-color: var(--hover-deep-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.hover__ltr:hover::after{
+  width: 100%;
+}
+
+
+.contact .from button h2 i,
+.contact .from button h2 
+{
+  color: #fff;
+  z-index: 1;
+}
+
+.contact .from button h2{
+  cursor: pointer;
+  padding: 10px 20px !important;
   font-size: 20px;
+
 }
 .contact__cards {
   padding-inline-start: 80px;
