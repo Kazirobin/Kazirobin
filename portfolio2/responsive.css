@@ -39,6 +39,11 @@
         margin-bottom: 0px;
       
       }
+      .service__card{
+
+        padding-inline-start: 50px;
+      }
+
 }
 @media (max-width:800px) {
     .navbar{
@@ -146,7 +151,7 @@
 }
 @media (max-width:600px){
     .service__cards .service__card{
-        width: 100vw;
+        width: 90vw;
     }
 
     .contact{
