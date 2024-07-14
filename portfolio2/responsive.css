@@ -1,169 +1,163 @@
-@media (min-width:800px){
-    .logos .logo {
-        padding-top: 40px;
-       }
-    .menu{
-        display: flex;
-    }
-    .bars{
-        display: none;
-        visibility: hidden;
-    }
-    #menu{
-        display: none;
-    }
-    .banner .right {
-      padding-block-start: 90px;
-    }
-    .contact{
-        display: flex;
-    }
-    .contact .from {
-        width: 600px;
-      }
-      .contact .from input:nth-child(2) {
-        width: 40%;
-      }
-      .contact .from input:nth-child(3) {
-        width: 40%;
-        float: inline-end;
-      }
-      .contact .from input:first-child {
-        height: 200px;
-        width: 100%;
-      }
-      
-      .contact .from input:nth-child(4) {
-        width: 100%;
-        display: block;
-        margin-bottom: 0px;
-      
-      }
-      .service__card{
-
-        padding-inline-start: 50px;
-      }
-      .contact .from {
-        padding-inline-start: 80px;
-      }
-      .contact__cards {
-        padding-inline-start: 80px;
-      }
-}
-@media (max-width:800px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding-inline: 10px !important;
-    }
-    .menu,#menu{
-        display: none;
-    }
-    #menu:checked~.menu{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        row-gap: 25px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logos{
-        display: flex;
-        align-items: center;
-        width: 90vw;
-    }
- 
-    .bars{
-        display: flex;
-        margin-left: auto;
-        margin-right: 20px;
-    }
-    .banner .left{
-        margin-top: 80px ;
-        width: 100vw ;
-        padding: 20px !important;
-    }
-    .banner .left button{
-        padding: 10px !important;
-        font-size: 16px !important;
-
-    }
-    .about__main{
-        flex-direction: column;
-    }
-    .about__title h1{
-        max-width: 80%;
-        font-size: 25px !important;
-    }
-    .talk h1{
-        font-size: 20px;
-    }
-    .talk__icons{
-        flex-direction: column;
-    }
-    .talk__icons .icon{
-        display: block;
-        width: 80%;
-        
-    }
-
-
-    .service__cards .service__card{
-        width: 80vw;
-    }
-    .container.banner-2{
-        padding: 80px 40px;
-      }
-      .container .section-3 {
-        display: block;
-        width:100%;
-
-    }
-    .section-3 .left-3 {
-        width: 100%;
-        float: left;
-      }
-      .section-3 .left-3 h1 {
-        font-size: 30px;
-        padding: 120px 0px 30px 30px;
-      }
-      .section-3 .left-3 p {
-        padding: 20px 60px 30px 30px;
-        font-size: 20px;
-      }
-      
-      .section-3 .right-3  {
-        margin: auto;
-        text-align: center;
-      }
-      .section-3 .right-3 img {
-        width: 300px;
-        margin: auto;
-      }
-      .contact{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .contact .from {
-        width: 90%;
-   }
-   .from input{
+@media (min-width: 800px) {
+  .logos .logo {
+    padding-top: 40px;
+  }
+  .menu {
+    display: flex;
+  }
+  .bars {
+    display: none;
+    visibility: hidden;
+  }
+  #menu {
+    display: none;
+  }
+  .banner .right {
+    padding-block-start: 90px;
+  }
+  .contact {
+    display: flex;
+  }
+  .contact .from {
+    width: 600px;
+  }
+  .contact .from input:nth-child(2) {
+    width: 40%;
+  }
+  .contact .from input:nth-child(3) {
+    width: 40%;
+    float: inline-end;
+  }
+  .contact .from input:first-child {
+    height: 200px;
     width: 100%;
-   }
+  }
 
+  .contact .from input:nth-child(4) {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+  
+  .contact .from {
+    padding-inline-start: 80px;
+  }
+  .contact__cards {
+    padding-inline-start: 80px;
+  }
 }
-@media (max-width:600px){
-    .service__cards .service__card{
-        width: 90vw;
-    }
 
-    .contact{
-        flex-direction: column;
-        gap: 10px;
-      }
-      .from input{
-        display: block;
-        width: 100%;
-      }
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 10px !important;
+  }
+  .menu,
+  #menu {
+    display: none;
+  }
+  #menu:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .bars {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .banner .left {
+    margin-top: 80px;
+    width: 100vw;
+    padding: 20px !important;
+  }
+  .banner .left button {
+    padding: 10px !important;
+    font-size: 16px !important;
+  }
+  .about__main {
+    flex-direction: column;
+  }
+  .about__title h1 {
+    max-width: 80%;
+    font-size: 25px !important;
+  }
+  .talk h1 {
+    font-size: 20px;
+  }
+  .talk__icons {
+    flex-direction: column;
+  }
+  .talk__icons .icon {
+    display: block;
+    width: 80%;
+  }
+
+  .service__cards .service__card {
+    width: 80vw;
+  }
+  .container.banner-2 {
+    padding: 80px 40px;
+  }
+  .container .section-3 {
+    display: block;
+    width: 100%;
+  }
+  .section-3 .left-3 {
+    width: 100%;
+    float: left;
+  }
+  .section-3 .left-3 h1 {
+    font-size: 30px;
+    padding: 120px 0px 30px 30px;
+  }
+  .section-3 .left-3 p {
+    padding: 20px 60px 30px 30px;
+    font-size: 20px;
+  }
+
+  .section-3 .right-3 {
+    margin: auto;
+    text-align: center;
+  }
+  .section-3 .right-3 img {
+    width: 300px;
+    margin: auto;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact .from {
+    width: 90%;
+  }
+  .from input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__cards .service__card {
+    width: 90vw;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .from input {
+    display: block;
+    width: 100%;
+  }
 }

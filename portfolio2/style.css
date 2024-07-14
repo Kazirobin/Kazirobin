@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 
+/* map
+
+
+
+*/
+
 :root {
   --dark-bg-color: #000;
   --light-dark-bg-color: #2c2c2c;
@@ -16,7 +22,7 @@
   border: 0;
   list-style: none;
   text-decoration: none;
-  color: #fff;
+  color: var(--light-color);
   font-family: "Roboto", sans-serif;
 }
 html {
@@ -30,7 +36,7 @@ h1 {
   color: var(--deep-light-color);
 }
 .container {
-  background-color: black;
+  background-color: var(--dark-bg-color);
   padding-left: 30px;
   @media (max-width: 768px) {
     padding-left: 0px;
@@ -42,7 +48,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  background-color: var(--dark-bg-color);
   width: 100vw;
   padding-inline: 120px;
   .menu {
@@ -63,7 +69,7 @@ span.bar {
   height: 5px;
   width: 100%;
   display: block;
-  background-color: #fff;
+  background-color: var(--dark-bg-color);
   &:nth-child(2) {
     width: 75%;
   }
@@ -96,7 +102,6 @@ span.bar {
 
 a h2 {
   font-size: 1.8rem;
-  color: #fff;
   font-weight: 500;
   margin-inline: 20px;
 }
@@ -104,11 +109,10 @@ a h2 {
 button h2 {
   position: relative;
   z-index: 2;
-  color: #fff;
   font-size: 1.6rem;
 }
 .btn1 {
-  background: #000;
+  background: var(--dark-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,10 +188,7 @@ button h2 {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.sidebar h2,
-.sidebar i {
-  color: var(--deep-light-color);
-}
+
 .banner {
   background-image: url("./img/hero-banner.jpg");
   display: flex;
@@ -215,11 +216,7 @@ button h2 {
     padding: 10px;
   }
 }
-.banner .left h1,
-.banner .left p,
-.banner .left button {
-  color: var(--deep-light-color);
-}
+
 .banner .left h1 {
   font-size: 46px;
   @media (max-width: 800px) {
@@ -261,7 +258,7 @@ button h2 {
   height: 100vw;
 } */
 .about__main .right {
-  background-color: #000;
+  background-color: var(--dark-bg-color);
 }
 .about__title h1 {
   font-size: 36px;
@@ -277,7 +274,7 @@ button h2 {
 .about__main .left,
 .about__main .right {
   flex: 1;
-  background-color: #000;
+  background-color: var(--dark-bg-color);
 }
 .about__main .left h1 {
   font-size: 20px;
@@ -300,7 +297,7 @@ button h2 {
 }
 
 .about__main .right {
-  background-color: #000;
+  background-color: var(--dark-bg-color);
   display: flex;
   flex-direction: column;
   row-gap: 5px;
@@ -311,7 +308,7 @@ label img {
   width: 30px;
 }
 .progress {
-  background-color: #fff;
+  background-color: var(--light-color);
   border-radius: 30px;
 }
 .bar {
@@ -321,12 +318,12 @@ label img {
   text-align: center;
   line-height: 30px;
   font-size: 25px;
-  color: #fff;
+  color: var(--light-color);
 }
 .talk {
   text-align: center;
   padding: 20px;
-  background: #000;
+  background: var(--dark-bg-color);
 }
 .talk h1 {
   font-size: 36px;
@@ -354,7 +351,7 @@ label img {
 }
 .section-2 {
   text-align: center;
-  background-color: #000;
+  background-color: var(--dark-bg-color);
 }
 .section-2 h1 {
   font-size: 36px;
@@ -382,10 +379,10 @@ label img {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.service__card:hover  .visit{
+.service__card:hover .visit {
   z-index: 2;
 }
-.visit{
+.visit {
   position: absolute;
   top: 0;
   left: 0;
@@ -396,7 +393,7 @@ label img {
   align-items: center;
   background-color: #2c2c2c8c;
   z-index: -1;
-  >a{
+  > a {
     font-size: 20px;
     padding: 10px 30px;
     border: 3px solid var(--hover-deep-color);
@@ -404,7 +401,7 @@ label img {
 }
 .service__card img {
   border-radius: 10px;
-  width: 100%;
+  width: 370px;
   height: 300px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -412,14 +409,14 @@ label img {
   -o-border-radius: 10px;
 }
 .service__card h1 {
-  color: #000;
+  color: var(--dark-bg-color);
   font-size: 30px;
   display: block;
   padding-inline: 10px;
 }
 .service__card p {
   padding-inline: 10px;
-  color: #000;
+  color: var(--dark-bg-color);
   font-size: 20px;
   display: block;
 }
@@ -456,24 +453,23 @@ label img {
 }
 
 .contact {
-  background: #000;
+  background: var(--dark-bg-color);
 }
 .contact .from {
-  background: #000;
+  background: var(--dark-bg-color);
   margin: auto;
 }
 .contact .from input {
   padding: 20px;
   margin-block: 20px;
   background-color: var(--dark-bg-color);
-  border-radius: 10px ;
+  border-radius: 10px;
   border: 1px solid var(--hover-deep-color);
-  -webkit-border-radius: 10px ;
-  -moz-border-radius: 10px ;
-  -ms-border-radius: 10px ;
-  -o-border-radius: 10px ;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-
 
 .contact .from input::placeholder {
   color: var(--deep-light-color);
@@ -483,7 +479,7 @@ label img {
 }
 .contact .from button {
   margin-top: 30px;
-  background: #000;
+  background: var(--dark-bg-color);
   border: 1px solid var(--hover-deep-color);
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -492,10 +488,11 @@ label img {
   -o-border-radius: 15px;
   z-index: 2;
 }
-.hover__ltr{
+.hover__ltr {
   position: relative;
+  overflow: hidden;
 }
-.hover__ltr::after{
+.hover__ltr::after {
   position: absolute;
   content: "";
   height: 100%;
@@ -517,23 +514,16 @@ label img {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.hover__ltr:hover::after{
+.hover__ltr:hover::after {
   width: 100%;
 }
 
 
-.contact .from button h2 i,
-.contact .from button h2 
-{
-  color: #fff;
-  z-index: 1;
-}
 
-.contact .from button h2{
+.contact .from button h2 {
   cursor: pointer;
   padding: 10px 20px !important;
   font-size: 20px;
-
 }
 .contact__cards {
   padding-block-start: 30px;
@@ -553,4 +543,10 @@ label img {
 }
 .contact__card .detail p {
   font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  display: block;
+  padding-block: 40px;
 }
