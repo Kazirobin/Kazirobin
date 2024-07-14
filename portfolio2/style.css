@@ -460,7 +460,7 @@ label img {
 }
 .contact .from {
   background: #000;
-  padding-inline-start: 80px;
+  margin: auto;
 }
 .contact .from input {
   padding: 20px;
@@ -536,7 +536,6 @@ label img {
 
 }
 .contact__cards {
-  padding-inline-start: 80px;
   padding-block-start: 30px;
 }
 .contact__card {

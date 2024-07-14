@@ -43,7 +43,12 @@
 
         padding-inline-start: 50px;
       }
-
+      .contact .from {
+        padding-inline-start: 80px;
+      }
+      .contact__cards {
+        padding-inline-start: 80px;
+      }
 }
 @media (max-width:800px) {
     .navbar{
@@ -142,7 +147,6 @@
     }
     .contact .from {
         width: 90%;
-        padding-inline-start: 20px;
    }
    .from input{
     width: 100%;
