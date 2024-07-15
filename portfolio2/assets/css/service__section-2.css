@@ -1,3 +1,11 @@
+:root {
+    --dark-bg-color: #000;
+    --light-dark-bg-color: #2c2c2c;
+    --light-color: #fff;
+    --deep-light-color: #dedede;
+    --hover-deep-color: #f70;
+    --hover-color: rgb(224, 117, 23);
+  }
 .section-2 {
     text-align: center;
     background-color: var(--dark-bg-color);
@@ -20,7 +28,6 @@
     margin: auto;
     background-color: var(--deep-light-color);
     width: 370px;
-    height: 600px;
     border: 1px solid var(--deep-light-color);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -30,6 +37,22 @@
   }
   .service__card:hover .visit {
     z-index: 2;
+  }
+  .service__card:hover{
+    >p{
+        z-index: 1;
+        opacity: 1;
+        transform: translateX(0);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
   }
   .visit {
     position: absolute;
@@ -66,9 +89,27 @@
   .service__card p {
     padding-inline: 10px;
     color: var(--dark-bg-color);
-    font-size: 20px;
-    display: block;
-  }
+    font-size: 28px;
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    top: 0;
+    align-items: center;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
   .service__card.work {
     height: auto;
   }

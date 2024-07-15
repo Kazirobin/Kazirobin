@@ -1,3 +1,11 @@
+:root {
+    --dark-bg-color: #000;
+    --light-dark-bg-color: #2c2c2c;
+    --light-color: #fff;
+    --deep-light-color: #dedede;
+    --hover-deep-color: #f70;
+    --hover-color: rgb(224, 117, 23);
+  }
 .banner {
     background-image: url("../img/hero-banner.jpg");
     display: flex;

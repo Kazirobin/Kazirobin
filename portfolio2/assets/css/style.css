@@ -6,11 +6,6 @@
 @import url("./service__section-2.css");
 @import url("./banner-2__section-3.css");
 @import url("./contact.css");
-/* map
-
-
-
-*/
 
 :root {
   --dark-bg-color: #000;
@@ -48,13 +43,6 @@ h1 {
     padding-left: 0px;
   }
 }
-
-
-
-
-
-
-
 .footer {
   text-align: center;
   display: block;
