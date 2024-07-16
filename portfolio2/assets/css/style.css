@@ -37,10 +37,12 @@ h1 {
   color: var(--deep-light-color);
 }
 .container {
+  max-width: 1200px;
+  margin: auto;
   background-color: var(--dark-bg-color);
   padding-left: 30px;
   @media (max-width: 768px) {
-    padding-left: 0px;
+    padding: 10px;
   }
 }
 .footer {

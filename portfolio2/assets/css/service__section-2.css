@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 20px;
-    max-width: 1200px;
+    margin: auto;
   }
   
   .service__card {

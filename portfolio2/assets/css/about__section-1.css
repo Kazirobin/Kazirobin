@@ -60,15 +60,7 @@
     background-color: var(--light-color);
     border-radius: 30px;
   }
-  .bar {
-    border-radius: 30px;
-  
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 25px;
-    color: var(--light-color);
-  }
+
   .talk {
     text-align: center;
     padding: 20px;
