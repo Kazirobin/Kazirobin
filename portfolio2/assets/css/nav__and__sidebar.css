@@ -8,14 +8,19 @@
 }
 .navbar {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
+  width: 1200px;
+  margin: auto;
   display: flex;
+  padding-inline: 50px;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark-bg-color);
-  width: 100vw;
-  padding-inline: 20vw;
-  .menu {
+  .menu
+  
+{
     justify-content: space-between;
     align-items: center;
   }
