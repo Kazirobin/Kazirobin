@@ -218,7 +218,6 @@ button h2 {
 }
 @media (max-width: 600px) {
   .navbar{
-    max-width: 600px;
     margin: auto;
     padding-inline: 10px;
   }
