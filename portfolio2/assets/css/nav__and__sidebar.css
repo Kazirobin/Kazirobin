@@ -126,20 +126,26 @@ button h2 {
 .btn1:hover::after {
   height: 100%;
   border-radius: 20px 0px 20px 0px;
+  -webkit-border-radius: 20px 0px 20px 0px;
+  -moz-border-radius: 20px 0px 20px 0px;
+  -ms-border-radius: 20px 0px 20px 0px;
+  -o-border-radius: 20px 0px 20px 0px;
 }
 
 .sidebar {
+  writing-mode: vertical-lr;
   position: fixed;
   top: 50px;
   left: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 5px;
   gap: 30px;
   height: calc(100% - 50px);
-  background-color: var(--dark-bg-color);
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
 }
 
 .sidebar h2:first-child {
