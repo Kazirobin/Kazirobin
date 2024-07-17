@@ -47,6 +47,8 @@ h1 {
   background-color: var(--dark-bg-color);
   padding-left: 30px;
   overflow: hidden;
+
+  
   @media (max-width: 768px) {
     padding: 10px;
   }
