@@ -46,9 +46,9 @@ h1 {
   margin: auto;
   background-color: var(--dark-bg-color);
   padding-left: 30px;
-  overflow: hidden;
+  overflow: hidden !important;
 
-  
+
   @media (max-width: 768px) {
     padding: 10px;
   }
