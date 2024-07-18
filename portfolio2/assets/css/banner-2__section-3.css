@@ -27,6 +27,9 @@
   .section-3 .right-3 img {
     width: 300px;
   }
+  .section-3 .right-3{
+    text-align: center;
+  }
   
 @media (min-width: 800px) {
     .section-3 .left-3 {

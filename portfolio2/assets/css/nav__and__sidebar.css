@@ -11,9 +11,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-.body{
-  width: 100%;
-}
+
 .navbar {
   position: fixed;
   top: 0;

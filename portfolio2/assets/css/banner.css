@@ -65,7 +65,7 @@
   .banner .right {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     width: 50vw;
   }
   .banner .right img {

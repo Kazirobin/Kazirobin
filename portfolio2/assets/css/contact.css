@@ -128,7 +128,7 @@
         padding-inline-start: 80px;
       }
       .contact__cards {
-        padding-inline-start: 80px;
+        padding-inline-end: 80px;
       }
 }
 @media (max-width: 800px) {
