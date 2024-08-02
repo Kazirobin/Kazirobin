@@ -89,5 +89,9 @@
       }
 }
 @media (max-width: 600px) {
-    
+      .banner .left {
+        margin-top: 80px;
+        width: 100vw;
+        padding: 20px !important;
+      }
 }
