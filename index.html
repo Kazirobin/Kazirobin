@@ -1,82 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- link css file -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <style>
-    /* Add some basic styling for demonstration purposes */
-    .container {
-      display: none;
-      background-color: pink;
-    }
-  </style>
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- link css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      /* Add some basic styling for demonstration purposes */
+      .container {
+        display: none;
+        background-color: pink;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
     <nav>
-
-        <div class="navbar_item logo">
-            <h1 class="logo">Kazi Robin</h1>
-        </div>
-        <ul class="navbar">
-            <!-- Links to navigate between slides -->
-    <li class="navbar_item"><a href="#" class="navbar_item_link" onclick="showSlide(0)">home</a></li>
-    <li class="navbar_item"><a href="#" class="navbar_item_link" onclick="showSlide(1)">work</a></li>
-    <li class="navbar_item"><a href="#" class="navbar_item_link" onclick="showSlide(2)">team</a></li>
-    <li class="navbar_item"><a href="#" class="navbar_item_link" onclick="showSlide(3)">about</a></li>
-    <li class="navbar_item"><a href="#" class="navbar_item_link" onclick="showSlide(4)">contact</a></li>
-  </ul>
-</nav>
-  
-  <!-- Slide sections with containers -->
-  <section class="slide">
-    <div class="container">Home</div>
-    <a href="./portfolio1/index.html">portfolio1</a>
-    <a href="./portfolio2/index.html">portfolio2</a>
-  </section>
-  <section class="slide">
-    <div class="container">Work</div>
-    <div class="container">
-      <a href="./omni/index.html">Omni Project></a>
-    </div>
-    <div class="container">box32</div>
-    <div class="container">box42</div>
-  </section>
-  <section class="slide">
-    <div class="container"><h1>Team</h1></div>
-    <div class="container">  <div id="tags-container"></div>
-    <div>
-      <div id="cards-container" class="cards"></div>
-      <div id="pagination">
-        <button id="prevBtn" onclick="prevPage()">Prev</button>
-        <button id="nextBtn" onclick="nextPage()">Next</button>
+      <div class="navbar_item logo">
+        <h1 class="logo">Kazi Robin</h1>
       </div>
-    </div></div>
-  </section>
-  <section class="slide">
-    <div class="container">About</div>
-  </section>
-  <section class="slide">
-    <div class="container">Contact</div>
-    <div class="container">box5</div>
-    <div class="container">box5</div>
-  </section>
+      <ul class="navbar">
+        <!-- Links to navigate between slides -->
+        <li class="navbar_item">
+          <a href="#" class="navbar_item_link" onclick="showSlide(0)">home</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#" class="navbar_item_link" onclick="showSlide(1)">work</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#" class="navbar_item_link" onclick="showSlide(2)">team</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#" class="navbar_item_link" onclick="showSlide(3)">about</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#" class="navbar_item_link" onclick="showSlide(4)"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Navigation buttons -->
-  <main>
-    <button type="button" onclick="prevSlide()">prev</button>
-    <button type="button" onclick="nextSlide()">next</button>
-  </main>
-  <footer>
-    this is footer
-  </footer>
-  <script src="./assets/js/team_database.js"></script>
-<script src="./assets/js/script.js"></script>
-  <script>
+    <!-- Slide sections with containers -->
+    <section class="slide">
+      <div class="container">Home</div>
+      <a href="./portfolio1/index.html">portfolio1</a>
+      <a href="./portfolio2/index.html">portfolio2</a>
+    </section>
 
-  </script>
-</body>
+    <section class="slide">
+      <div class="container">Work</div>
+      <div class="container">
+        <a href="./omni/index.html">Omni Project></a>
+      </div>
+      <div class="container">
+        <h1>My Learning</h1>
+        <a href="./assets/learn/ts/index.html"></a>
+      </div>
+      <div class="container">box42</div>
+    </section>
+
+    <section class="slide">
+      <div class="container"><h1>Team</h1></div>
+      <div class="container">
+        <div id="tags-container"></div>
+        <div>
+          <div id="cards-container" class="cards"></div>
+          <div id="pagination">
+            <button id="prevBtn" onclick="prevPage()">Prev</button>
+            <button id="nextBtn" onclick="nextPage()">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="container">About</div>
+    </section>
+
+    <section class="slide">
+      <div class="container">Contact</div>
+      <div class="container">box5</div>
+      <div class="container">box5</div>
+    </section>
+
+    <!-- Navigation buttons -->
+    <main>
+      <button type="button" onclick="prevSlide()">prev</button>
+      <button type="button" onclick="nextSlide()">next</button>
+    </main>
+    <footer>this is footer</footer>
+    <script src="./assets/js/team_database.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script></script>
+  </body>
 </html>
