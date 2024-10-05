@@ -14,3 +14,12 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 - 📫 How to reach me: +88 01787-881-334
+
+
+## 📈 GitHub Stats
+
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazirobin&theme=vision-friendly-dark&count_private=true&hide=html" alt="Kazi Robin Most Used Languages" />
+
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=Kazirobin&show_icons=true&theme=vision-friendly-dark" alt="Kazi Robin GitHub Stats" />
+
+<br>
