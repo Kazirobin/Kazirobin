@@ -23,3 +23,7 @@ Here are some ideas to get you started:
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=Kazirobin&show_icons=true&theme=vision-friendly-dark" alt="Kazi Robin GitHub Stats" />
 
 <br>
+
+### Fun fact
+
+[![](https://visitcount.itsvg.in/api?id=Kazirobin&label=Profile%20Views&color=0&icon=5&pretty=false)](https://visitcount.itsvg.in)
