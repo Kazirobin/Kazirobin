@@ -23,6 +23,8 @@ Here are some ideas to get you started:
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=Kazirobin&show_icons=true&theme=vision-friendly-dark" alt="Kazi Robin GitHub Stats" />
 
 <br>
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Kazirobin&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
 ### Fun fact
 
