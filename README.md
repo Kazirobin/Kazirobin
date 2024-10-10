@@ -14,8 +14,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 - 📫 How to reach me: +88 01787-881-334
-  `
-  <details>
+  
+<details>
 <summary>Click For Details</summary>
   hello
 </details>
