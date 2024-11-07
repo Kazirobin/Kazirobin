@@ -1,5 +1,8 @@
 [![MasterHead](https://i.ibb.co/mqJ9bbQ/re-welcome.gif)](https://kazirobin.github.io/Kazirobin/portfolio2/index.html)
-### Hi I am Kazi Robin a web designer 👋
+# 💫 About Me:
+👯 I’m looking to collaborate on: Exciting MERN stack projects that push the boundaries of web development.<br>🤝 I’m looking for help with: Advancing my skills in optimizing backend performance and exploring advanced React techniques.<br>🌱 I’m currently learning: Exploring relational databases with PostgreSQL and mastering Prisma for efficient data modeling..<br>💬 Ask me about: Anything related to MERN stack development and best practices.<br>⚡ Fun fact: I'm an avid hiker and have a knack for experimenting with international cuisines.
+
+
 
 <!--
 **Kazirobin/Kazirobin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
