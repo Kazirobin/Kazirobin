@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .input-box {
+            font-size: 20px;
+            padding: 10px;
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-box.correct {
+            border-color: green;
+            color: green;
+        }
+
+        .input-box.incorrect {
+            border-color: red;
+            color: red;
+        }
+
+        .shadow-text {
+            color: #aaa;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .counter {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="completionCounter" class="counter">Completed: 0</div>
+        <div id="shadowTextElement" class="shadow-text">
+            !@#$%^&*()_+1234567890-=`~[]{}|\;:'",.<>?/
+        </div>
+        <input type="text" id="typingInput" class="input-box" placeholder="Type here..." />
+    </div>
+
+    <script>
+        let shadowText = `!@#$%^&*()_+1234567890-=\`~[]{}|\\;:'",.<>?/`;
+        let completionCount = 0; // Counter for completions
+        const shadowTextElement = document.getElementById('shadowTextElement');
+        const inputBox = document.getElementById('typingInput');
+        const completionCounter = document.getElementById('completionCounter');
+
+        // Automatically focus on the input box when the page loads
+        window.onload = () => {
+            inputBox.focus();
+        };
+
+        // Ensure the input box always regains focus if clicked outside
+        document.addEventListener('click', () => {
+            inputBox.focus();
+        });
+
+        // Function to shuffle the characters of a string
+        function shuffleString(str) {
+            const array = str.split('');
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array.join('');
+        }
+
+        inputBox.addEventListener('input', () => {
+            const userInput = inputBox.value;
+
+            if (shadowText.startsWith(userInput)) {
+                inputBox.classList.add('correct');
+                inputBox.classList.remove('incorrect');
+            } else {
+                inputBox.classList.add('incorrect');
+                inputBox.classList.remove('correct');
+            }
+
+            // Shuffle shadowText and increment counter when user completes typing
+            if (userInput === shadowText) {
+                setTimeout(() => {
+                    shadowText = shuffleString(shadowText); // Shuffle the text
+                    shadowTextElement.textContent = shadowText; // Update displayed shadow text
+                    inputBox.value = ''; // Clear input box
+                    inputBox.classList.remove('correct');
+                    completionCount++; // Increment the counter
+                    completionCounter.textContent = `Completed: ${completionCount}`; // Update the counter display
+                }, 500); // Slight delay for user feedback
+            }
+        });
+    </script>
+</body>
+</html>
