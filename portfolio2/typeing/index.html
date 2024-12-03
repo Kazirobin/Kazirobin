@@ -3,33 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Practice</title>
+    <title>Typing Practice App</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #1d3557, #457b9d);
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            color: #fff;
         }
 
-        .container {
+        .app-container {
             text-align: center;
-            position: relative;
-            width: 100%;
+            background: #f8f9fa;
+            color: #212529;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .shadow-text {
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
         }
 
         .input-box {
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px;
-            width: 80%;
-            max-width: 600px;
+            width: 100%;
+            max-width: 500px;
             border: 2px solid #ccc;
             border-radius: 5px;
+            margin: 10px 0;
             outline: none;
-            transition: border-color 0.3s;
         }
 
         .input-box.correct {
@@ -42,43 +64,71 @@
             color: red;
         }
 
-        .shadow-text {
-            color: #aaa;
-            font-size: 18px;
-            margin-bottom: 10px;
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
         }
 
-        .counter {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #007bff;
-            color: white;
-            padding: 5px 10px;
+        .stat-item {
+            font-size: 1rem;
+            background: #007bff;
+            padding: 10px;
             border-radius: 5px;
-            font-size: 16px;
+            color: #fff;
+        }
+
+        .stat-item span {
+            font-weight: bold;
+        }
+
+        .reset-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background: #dc3545;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .reset-btn:hover {
+            background: #c82333;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="completionCounter" class="counter">Completed: 0</div>
+    <div class="app-container">
+        <div class="app-title">Typing Practice App</div>
         <div id="shadowTextElement" class="shadow-text">
             !@#$%^&*()_+1234567890-=`~[]{}|\;:'",.<>?/
         </div>
         <input type="text" id="typingInput" class="input-box" placeholder="Type here..." />
+        <div class="stats">
+            <div class="stat-item">Completed: <span id="completionCounter">0</span></div>
+            <div class="stat-item">Time: <span id="timer">0</span>s</div>
+            <div class="stat-item">Speed: <span id="wpm">0</span> WPM</div>
+        </div>
+        <button id="resetButton" class="reset-btn">Reset</button>
     </div>
 
     <script>
         let shadowText = `!@#$%^&*()_+1234567890-=\`~[]{}|\\;:'",.<>?/`;
         let completionCount = 0; // Counter for completions
+        let startTime, timerInterval;
         const shadowTextElement = document.getElementById('shadowTextElement');
         const inputBox = document.getElementById('typingInput');
         const completionCounter = document.getElementById('completionCounter');
+        const timerDisplay = document.getElementById('timer');
+        const wpmDisplay = document.getElementById('wpm');
+        const resetButton = document.getElementById('resetButton');
 
         // Automatically focus on the input box when the page loads
         window.onload = () => {
             inputBox.focus();
+            resetTimer();
         };
 
         // Ensure the input box always regains focus if clicked outside
@@ -96,8 +146,37 @@
             return array.join('');
         }
 
+        // Start timer
+        function startTimer() {
+            startTime = Date.now();
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+                timerDisplay.textContent = elapsedTime;
+            }, 1000);
+        }
+
+        // Reset timer and stats
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timerDisplay.textContent = 0;
+            wpmDisplay.textContent = 0;
+            completionCount = 0;
+            completionCounter.textContent = completionCount;
+        }
+
+        // Calculate WPM
+        function calculateWPM(text, elapsedSeconds) {
+            const words = text.length / 5; // Approximate word count
+            const minutes = elapsedSeconds / 60;
+            return Math.round(words / minutes) || 0; // Avoid NaN for very fast completions
+        }
+
         inputBox.addEventListener('input', () => {
             const userInput = inputBox.value;
+
+            // Start timer on first input
+            if (!startTime) startTimer();
 
             if (shadowText.startsWith(userInput)) {
                 inputBox.classList.add('correct');
@@ -109,15 +188,31 @@
 
             // Shuffle shadowText and increment counter when user completes typing
             if (userInput === shadowText) {
+                clearInterval(timerInterval);
+                const elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
+                const wpm = calculateWPM(shadowText, elapsedSeconds);
+                wpmDisplay.textContent = wpm;
+
                 setTimeout(() => {
                     shadowText = shuffleString(shadowText); // Shuffle the text
                     shadowTextElement.textContent = shadowText; // Update displayed shadow text
                     inputBox.value = ''; // Clear input box
                     inputBox.classList.remove('correct');
                     completionCount++; // Increment the counter
-                    completionCounter.textContent = `Completed: ${completionCount}`; // Update the counter display
+                    completionCounter.textContent = completionCount; // Update the counter display
+                    startTimer(); // Restart timer for next round
                 }, 500); // Slight delay for user feedback
             }
+        });
+
+        // Reset button functionality
+        resetButton.addEventListener('click', () => {
+            resetTimer();
+            shadowText = shuffleString(shadowText); // Shuffle text for new start
+            shadowTextElement.textContent = shadowText;
+            inputBox.value = '';
+            inputBox.classList.remove('correct', 'incorrect');
+            startTime = null; // Reset timer start point
         });
     </script>
 </body>
