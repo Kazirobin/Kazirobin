@@ -8,6 +8,9 @@
 **Kazirobin/Kazirobin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
+Frontend  
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username/your-repo)
+
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
