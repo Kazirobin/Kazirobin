@@ -1,5 +1,6 @@
 [![MasterHead](https://i.ibb.co/mqJ9bbQ/re-welcome.gif)](https://kazirobin.github.io/Kazirobin/portfolio2/index.html)
 # 💫 About Me:
+[my portfolio>>](https://kazirobin.github.io/Kazirobin/portfolio2/index.html)
 👯 I’m looking to collaborate on: Exciting MERN stack projects that push the boundaries of web development.<br>🤝 I’m looking for help with: Advancing my skills in optimizing backend performance and exploring advanced React techniques.<br>🌱 I’m currently learning: Exploring relational databases with PostgreSQL and mastering Prisma for efficient data modeling..<br>💬 Ask me about: Anything related to MERN stack development and best practices.<br>⚡ Fun fact: I'm an avid hiker and have a knack for experimenting with international cuisines.
 
 
@@ -32,7 +33,7 @@ Here are some ideas to get you started:
 # 💻 Tech Stack:
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/Kazirobin/css) 
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Kazirobin/css)
-[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/Kazirobin/JavaScript_Practice)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/Kazirobin/javascript)
 [![Frontend](https://img.shields.io/badge/Frontend-%23181717.svg?style=for-the-badge&logo=frontend&logoColor=white)](https://github.com/your-username/your-repo)
 [![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdown-cheatsheet.com/) 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
