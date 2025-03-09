@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(5, auto);
+  gap: 10px;
+}
+.card {
+  background-color: purple;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+}
+.title {
+  grid-row: 1/2;
+}
+.details {
+  background-color: peru;
+  grid-row: 2/4;
+}
+.price {
+  grid-row: 4/5;
+}
